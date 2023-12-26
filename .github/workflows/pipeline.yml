@@ -38,5 +38,23 @@ jobs:
           with:
             name: dist
             path: dist  
+    deploy:
+       name: Deploy
+       needs: build
+       runs-on: ubuntu-20.04
+       if: github.ref == 'refs/heads/main'
+
+       steps:
+         - name: Download artifact
+           uses: actions/download-artifact@v3
+           with:
+             name: production-files
+             path: ./dist
+
+         - name: Deploy to GitHub Pages
+           uses: peaceiris/actions-gh-pages@v3
+           with:
+            github_token: ${{ github.token }}
+            publish_dir: ./dist       
 
   
