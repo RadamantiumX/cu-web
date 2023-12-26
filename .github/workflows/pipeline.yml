@@ -3,8 +3,18 @@ name: Deployment Pipeline
 on:
     push: # Evento de GIT q espera
         branches: [main] # Mi rama principal
+    pull_request:
+        branches: [main]
+        types: [opened, synchronize]    
 
 jobs:
+    avoid_reduncy:
+      runs-on: ubuntu-20.04
+      steps:
+        - name: Cancel Previus Redundant Builds
+          uses: styfle/cancel-workflow-action
+          with:
+            access_token: ${{ github.token }}
     lint:
       runs-on: ubuntu-20.04
       steps:
