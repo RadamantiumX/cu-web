@@ -1,7 +1,12 @@
-import Logo from '../assets/no-background.png'
-import './styles-navbar.css'
+import Logo from '../../assets/no-background.png'
+import './styles-layout.css'
+import ResponsiveButton from './ResponsiveButton'
+
 
 export default function NavBar() {
+    
+
+
     return (
         <section className='container-navbar'>
             <nav className="navbar container">
@@ -13,22 +18,17 @@ export default function NavBar() {
                 <div className='navbar__nav'>
                     <ul className='nav__list'>
                         <li className='nav__link'>
-                            <a href="#"><i style={{ marginRight: '5px' }} className="fa-solid fa-user"></i> Ingresar</a>
+                            <a href="#"><i style={{ marginRight: '2px' }} className="fa-solid fa-user"></i> Mi Perfil</a>
+                            
+                        </li>
+                        <li className='nav__link'>
+                           <a href="#"><i style={{ marginRight: '2px' }} className="fa-solid fa-location-dot"></i>Mi Ubicación</a>
                         </li>
                     </ul>
                     <a href="#" className='button button-primary button-saber-mas'>¡Saber más!</a>
 
                     {/* Responsive Button */}
-                    <button className='navbar__toggle-btn' style={{ marginLeft: '7px' }}>
-                    <i className="fa-solid fa-ellipsis-vertical fa-lg"></i>
-                    </button>
-                    <div className='navbar__mobile-menu'>
-                    <ul className='nav__list'>
-                        <li className='nav__link-mobile'>
-                            <a href="#"><i style={{ marginRight: '5px' }} className="fa-solid fa-user"></i> Ingresar</a>
-                        </li>
-                    </ul>
-                    </div>
+                      <ResponsiveButton/>
                     {/* Responsive Button */}
 
                 </div>

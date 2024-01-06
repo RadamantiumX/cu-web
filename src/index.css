@@ -1,3 +1,9 @@
+/*Tailwind CSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*Tailwind CSS*/
+
 :root{
     --black: #000000;
     --white: #ffffff;
@@ -47,4 +53,5 @@ a {
     background-color: var(--pink);
     transition: background-color 0.5s ease-in-out;
 }
+
 
