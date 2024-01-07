@@ -1,0 +1,102 @@
+@import url(../../index.css);
+/* Login Form */
+.login-form-section{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+
+}
+
+.form__box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
+    margin-top: 30%;
+    border: solid 1px #d9d0d1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--background-gray);
+   
+}
+
+.login__elements{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+}
+
+.title__box__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.title__box__form h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.login__elements input[type="text"]{
+    height: 40px;
+    
+}
+.login__elements input[type="password"]{
+    height: 40px;
+   
+}
+.login__elements input:focus{
+    border: solid 2px #db233c;
+}
+
+.login__elements input[type="checkbox"]{
+    border-radius: 100px;
+}
+
+
+.login__elements button{
+    margin-top: 20px;
+}
+
+.remember__box{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+/* Login Form */
+
+/* Splash */
+.image-section-login{
+    height: 100vh;
+    width: 50%;
+    background-image: linear-gradient(to top,  rgba(24, 26, 29, 0.404)0%,rgba(50, 24, 92, 0.404)100%), url(../../assets/obelisco-bs-as-city-splash.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: center;
+}
+.logo-box-splash-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Splash */
+
+@media only screen and (max-width: 510px) {
+    .login-form-section{
+        width: 100%;
+        background-image: linear-gradient(to top,  rgba(24, 26, 29, 0.404)0%,rgba(50, 24, 92, 0.404)100%), url(../../assets/obelisco-bs-as-city-splash.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;   
+        background-position: center;
+    }
+    .image-section-login{
+        display: none;
+       
+    }
+  
+    }

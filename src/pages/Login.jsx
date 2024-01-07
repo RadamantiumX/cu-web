@@ -1,7 +1,12 @@
+import FormLogin from "../components/loginPageComps/FormLogin"
+import Splash from "../components/loginPageComps/Splash"
+
 export default function Login() {
     return(
-        <>
-        <h1>Login</h1>
-        </>
+        <main className="main-auth-page">
+        <FormLogin/>
+        <Splash/>
+        </main>
+        
     )
 }
