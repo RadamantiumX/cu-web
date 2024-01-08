@@ -1,24 +1,36 @@
 import { createBrowserRouter, Navigate } from "react-router-dom"
 import GuestLayout from "./layouts/GuestLayout"
-import DefaultLayout from "./layouts/DefaultLayout"
-import Login from "./pages/Login"
+import UserLayout from "./layouts/UserLayout"
+import AuthLayout from "./layouts/AuthLayout"
+
+
 import Home from "./pages/Home"
-import NotFound from "./pages/NotFound"
+import About from "./pages/About"
 import Info from "./pages/Info"
+import Profile from "./pages/Profile"
+import Search from "./pages/Search"
+import SignIn from "./pages/SignIn"
+import SignUp from "./pages/SignUp"
+import NotFound from "./pages/NotFound"
 
 const router = createBrowserRouter([
     {
-        path: '/',
-        element: <DefaultLayout/>,
+        path: '/user',
+        element: <UserLayout/>,
         children: [
             {
-                path: '/',
-                element: <Navigate to="/home"/>
+                path: '/user',
+                element: <Navigate to="/user/profile"/>
             },
             {
-                path: '/home',
-                element: <Home/>
+                path: '/user/profile',
+                element: <Profile/>
+            },
+            {
+                path: '/user/search',
+                element: <Search/>
             }
+            
         ]
     },
     {
@@ -27,25 +39,48 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Navigate to='/login'/>
+                element: <Navigate to="/home"/>
             },
             {
-                path: '/login',
-                element: <Login/>
+                path: '/home',
+                element: <Home/>
+            },
+            {
+                path: '/info',
+                element: <Info/>
+            },
+            {
+                path: '/about',
+                element: <About/>
             }
+           
         ]
    
 
     },
     {
+        path: '/auth',
+        element: <AuthLayout/>,
+        children: [
+            {
+                path: '/auth',
+                element: <Navigate to="/auth/signin"/>
+            },
+            {
+                path: '/auth/signin',
+                element: <SignIn/>
+            },
+            {
+                path: '/auth/signup',
+                element: <SignUp/>
+            }
+        ]
+    },
+    {
         path: '*',
         element: <NotFound/>
     },
-    {
-        path: '/info',
-        element: <Info/>
-    }
-
+    
 ])
 
 export default router;

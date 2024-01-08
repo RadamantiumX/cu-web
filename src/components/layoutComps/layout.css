@@ -107,6 +107,47 @@
    }
  
   /*Footer*/
+
+  /* Splash */
+.image-section-auth{
+  height: 100vh;
+  width: 60%;
+  background-image: linear-gradient(to top,  rgba(24, 26, 29, 0.404)0%,rgba(50, 24, 92, 0.404)100%), url(../../assets/obelisco-bs-as-city-splash.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  background-position: center;
+}
+
+/* Splash */
+
+/* Top Banner */
+.top-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--orange);
+  height: 5vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.top-banner .a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-banner .a img{
+  width: 5%;
+  height: auto;
+}
+
+
+
+.top-banner a:hover {
+  color: #fff9e0;
+}
+/* Top Banner */
   
 
 
@@ -215,6 +256,13 @@
       margin: 0;
     }
     /*NavBar*/
+
+    /* Splash */
+    .image-section-auth{
+      display: none;
+     
+  }
+    /* Splash */
 
 
   }

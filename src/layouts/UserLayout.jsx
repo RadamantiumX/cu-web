@@ -4,13 +4,13 @@ import { selectCurrentToken } from "../features/auth/authSlice"
 import NavBar from "../components/layoutComps/NavBar"
 import Footer from "../components/layoutComps/Footer"
 
-export default function DefaultLayout() {
+export default function UserLayout() {
     const token = useSelector(selectCurrentToken)
    
     
     return(
      token
         ? <><NavBar/><Outlet/><Footer/></>
-        : <Navigate to="/login"/>
+        : <Navigate to="/auth/signin"/>
     )
 }

@@ -1,12 +1,13 @@
-import './login.css'
+import './auth.css'
+import { Link } from 'react-router-dom'
 
-export default function FormLogin() {
+export default function SignInForm() {
     return(
         
-        <section id="login-form-section" className="login-form-section">
+        
             
              <form className="form__box">
-                <div className="login__elements">
+                <div className="auth__elements">
                   <div className='title__box__form'>
                      <h1>Ingresar con una cuenta</h1>  
                   </div>  
@@ -18,13 +19,16 @@ export default function FormLogin() {
                     <div className='remember__box'>
                         <label htmlFor="remember">Recordarme</label>
                         <input type="checkbox" name="remember" placeholder="Recordarme"/>
+                        <Link>Olvidaste tu contraseña?</Link>
                     </div>        
-                    <button className="bg-orange-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"><i style={{ marginRight: '5px' }} className="fa-solid fa-right-to-bracket"></i>Ingresar</button>
+                    <button className="tracking-wide btn-form-auth hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md"><i style={{ marginRight: '5px' }} className="fa-solid fa-right-to-bracket"></i>Ingresar</button>
+
+                    <div>
+                        <p>¿No tienes una cuenta aún?  <Link to="/auth/signup">Registrate 😉</Link></p>
+                    </div>
                 </div>
              </form>
              
-        </section>
-        
       
     )
 }

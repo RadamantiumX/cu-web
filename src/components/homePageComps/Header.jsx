@@ -31,7 +31,7 @@
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Conectando a cada Persona</h1>
+            <h1 className="text-4xl font-bold tracking-normal text-white sm:text-6xl">Conectando a cada Persona</h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               En algún lugar de tu barrio, esta el servicio que necesitas acorde a tu presupuesto.
             </p>

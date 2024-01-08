@@ -6,6 +6,7 @@
 
 :root{
     --black: #000000;
+    --orange: #e86e09;
     --white: #ffffff;
     --dark-purple: #3c122c;
     --medium-purple: #762ba3;
@@ -15,6 +16,8 @@
     --light-pink: #ffeffe;
     --green: #00b090;
     --background-gray: #eee;
+    --letter-gray: #7f8185;
+    
 }
 
 * {
@@ -24,7 +27,7 @@
 }
 
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: var(--background-gray);
 }
 
@@ -56,10 +59,3 @@ a {
 
 
 
-/*Login*/
-.main-auth-page{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
