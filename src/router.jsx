@@ -4,16 +4,16 @@ import UserLayout from "./layouts/UserLayout"
 import AuthLayout from "./layouts/AuthLayout"
 
 
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Info from "./pages/Info"
-import Profile from "./pages/Profile"
-import Search from "./pages/Search"
-import SignIn from "./pages/SignIn"
-import SignUp from "./pages/SignUp"
-import Recovery from "./pages/Recovery"
-import RessetPassword from "./pages/ResetPassword"
-import NotFound from "./pages/NotFound"
+import Home from "./pages/guest/Home"
+import About from "./pages/guest/About"
+import Info from "./pages/guest/Info"
+import Profile from "./pages/user/Profile"
+import Search from "./pages/user/Search"
+import SignIn from "./pages/auth/SignIn"
+import SignUp from "./pages/auth/SignUp"
+import Recovery from "./pages/auth/Recovery"
+import RessetPassword from "./pages/auth/ResetPassword"
+import NotFound from "./pages/404/NotFound"
 
 const router = createBrowserRouter([
     {

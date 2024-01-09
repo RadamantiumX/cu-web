@@ -1,5 +1,5 @@
-import Logo from '../../assets/no-background.png'
-import './layout.css'
+import Logo from '../../../assets/no-background.png'
+import '../layout.css'
 import ResponsiveButton from './ResponsiveButton'
 
 

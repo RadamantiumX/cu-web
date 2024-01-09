@@ -1,4 +1,4 @@
-import SignUpForm from "../components/authPageComps/SignUpForm"
+import SignUpForm from "../../components/authPageComps/SignUpForm"
 
 export default function SignUp() {
     return(

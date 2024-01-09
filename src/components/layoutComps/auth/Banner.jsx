@@ -1,5 +1,5 @@
-import './layout.css'
-import Logo from '../../assets/no-background.png'
+import '../layout.css'
+import Logo from '../../../assets/no-background.png'
 import { Link } from 'react-router-dom'
 
 export default function Banner() {

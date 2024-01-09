@@ -1,4 +1,4 @@
-import SignInForm from "../components/authPageComps/SigInForm"
+import SignInForm from "../../components/authPageComps/SigInForm"
 
 export default function SignIn() {
     return(

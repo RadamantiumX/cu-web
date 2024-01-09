@@ -1,3 +1,4 @@
+// No tiene Layout
 export default function NotFound() {
     return(
         <>

@@ -1,7 +1,7 @@
 import '../components/authPageComps/auth.css'
 import { Outlet } from 'react-router-dom'
-import Splash from '../components/layoutComps/Splash'
-import Banner from '../components/layoutComps/Banner'
+import Splash from '../components/layoutComps/auth/Splash'
+import Banner from '../components/layoutComps/auth/Banner'
 
 
 export default function AuthLayout () {
