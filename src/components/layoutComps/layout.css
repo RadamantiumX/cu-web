@@ -112,7 +112,7 @@
 .image-section-auth{
   height: 100vh;
   width: 60%;
-  background-image: linear-gradient(to top,  rgba(24, 26, 29, 0.404)0%,rgba(50, 24, 92, 0.404)100%), url(../../assets/obelisco-bs-as-city-splash.jpeg);
+  background-image: linear-gradient(to top,  rgba(24, 26, 29, 0.404)0%,rgba(50, 24, 92, 0.404)100%), url(../../assets/ppl-holding-puzzle-four.jpg);
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -263,6 +263,13 @@
      
   }
     /* Splash */
+
+    /* Top Banner */
+    .top-banner .a img{
+      width: 15%;
+      height: auto;
+    }
+    /* Top Banner */
 
 
   }

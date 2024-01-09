@@ -11,6 +11,8 @@ import Profile from "./pages/Profile"
 import Search from "./pages/Search"
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
+import Recovery from "./pages/Recovery"
+import RessetPassword from "./pages/ResetPassword"
 import NotFound from "./pages/NotFound"
 
 const router = createBrowserRouter([
@@ -73,6 +75,14 @@ const router = createBrowserRouter([
             {
                 path: '/auth/signup',
                 element: <SignUp/>
+            },
+            {
+                path: '/auth/recovery',
+                element: <Recovery/>
+            },
+            {
+                path: '/auth/reset-password',
+                element: <RessetPassword/>
             }
         ]
     },
